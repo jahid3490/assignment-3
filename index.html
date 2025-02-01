@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> assignment 3 </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -23,11 +27,19 @@
     }
   </script>
 
+<style>
 
+.sora-font {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+</style>
 
 
 </head>
-<body>
+<body class="sora-font">
 
 <!-- navbar -->
 
@@ -72,6 +84,7 @@
 
 
 <div class="mx-5">
+
 
     <div class="hidden lg:flex ">
     <svg
@@ -139,9 +152,12 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+              
+          </svg>
           </div>
+          
         </div>
+    
       </div>
 
 
@@ -182,13 +198,39 @@
 
 
 
+<!-- challenging part -->
+
+
+
+
+<div class="card lg:card-side bg-base-100 shadow-xl py-5 px-4">
+  <figure>
+    <img
+      src="images/vagitable.jpg"
+      alt="Album" />
+  </figure>
+  <div class="card-body">
+    <h2 class="text-3xl font-bold">Vegetables <span class="text-green-700">Fruits</span> And Vegetables Transparent <span class="text-green-700">Fruits</span></h2>
+    <p>Click the button to see more item.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">More item</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- service part -->
+
 <div>
     
 <h1 class="text-green-600 text-3xl mx-28 my-10"> Services</h1>
 </div>
 
 <main class="  container ">
-<div class=" grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-20 ">
+<div class=" grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 ">
 
 
 <div class="w-80  bg-red-100 mx-10 my-12 relative rounded-2xl">
@@ -198,7 +240,7 @@
 </div>
 
 <h1 class="text-center font-bold">24/7 Services </h1>
-<p class="text-center pb-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+<p class="text-center pb-5 "> instant support, reliability, efficiency, responsiveness, accessibility, convenience</p>
 
 </div>
 
@@ -211,7 +253,7 @@
 </div>
 
     <h1 class="text-center font-bold">Fast Delivery </h1>
-    <p class="text-center pb-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    <p class="text-center pb-5 "> quick shipping, timely arrival, speed, efficiency,  customer satisfaction, instant shipping, and urgency.</p>
     
     </div>
     
@@ -224,7 +266,7 @@
     </div>
 
         <h1 class="text-center font-bold">Healthy Products  </h1>
-        <p class="text-center pb-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <p class="text-center pb-5 ">Healthy vegetables provide nutrients, vitamins, minerals, fiber, antioxidants, freshness, energy, immunity, hydration.</p>
         
         </div>
         
@@ -555,7 +597,7 @@
     
   </nav>
   <nav>
-    <h6 class="footer-title">Social</h6>
+    <h6 class="footer-title">Follow us </h6>
     <div class="grid grid-flow-col gap-4">
       <a>
         <svg
